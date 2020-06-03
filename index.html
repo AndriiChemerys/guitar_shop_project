@@ -64,19 +64,74 @@
 
     <section class="container content-section">
         <h2 class="section-header">CART</h2>
-        <div class="cart-row">
+        <!-- <div class="cart-row">
             <span class="cart-item cart-header cart-column">ITEM</span>
             <span class="cart-price cart-header cart-column">PRICE</span>
             <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+        </div> -->
+
+        <div class="container">
+            <div class="row basket">
+                <div class="col s6 m2 basket-m basket__title">TITLE</div>
+                <div class="col s2 m2  basket-m basket__price">PRICE</div>
+                <div class="col s4 m2  basket-m basket__remove">REMOVE</div>
+            </div>
         </div>
+
+        <table class="responsive-table">
+            <thead>
+                <tr>
+                    <th>Guitar</th>
+                    <th>Guitar price</th>
+                    <th>Quantity</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>
+                        <img class="cart-item-image" src="img/fender-img.jpg" width="100" height="100">
+                        <span>${title}</span>
+                    </td>
+                    <td>Eclair</td>
+                    <td>$0.87</td>
+                </tr>
+            </tbody>
+        </table>
+
         <div class="cart-items">
+            <!-- ############################## -->
+            <div class="cart-row">
+                <div class="cart-item cart-column">
+                    <img class="cart-item-image" src="img/fender-img.jpg" width="100" height="100">
+                    <span class="cart-item-title">${title}</span>
+                </div>
+                <span class="cart-price cart-column">${price}</span>
+                <div class="cart-quantity cart-column">
+                    <input class="cart-quantity-input" type="number" value="2">
+                    <button class="btn btn-danger" type="button">REMOVE</button>
+                </div>
+            </div>
+            <!-- ############################## -->
+
+
+
+
+            <!-- ############################## -->
+
+
+
         </div>
         <div class="cart-total">
             <strong class="cart-total-title">Total</strong>
             <span class="cart-total-price">$0</span>
         </div>
-        <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+        <a class="waves-effect waves-light btn btn-purchase"><i
+                class="material-icons left">shopping_cart</i>PURCHASE</a>
+        <!-- <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button> -->
     </section>
+
+
 
 </body>
 

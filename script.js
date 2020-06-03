@@ -37,8 +37,8 @@ let addToCartClicked = (event) => {
 let addItemToCart = (title, price, imageSrc) => {
     console.log(title, price, imageSrc)
     let cartRow = document.createElement('div')
-    cartRow.classList.add('.cart-row')
-    let cartItems = document.querySelector('.cart-item')
+    cartRow.classList.add('cart-row')
+    let cartItems = document.querySelector('.cart-items')
     let cartItemNames = cartItems.querySelectorAll('.cart-item-title')
     for (i of cartItemNames) {
         if (i.innerText == title) {

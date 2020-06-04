@@ -1,14 +1,17 @@
-.basket {
-  display: flex;
-  /* justify-content: end; */
-  align-items: center;
+.row-bottom {
+  margin-bottom: 0;
 }
 
-.basket__head {
+.basket__head,
+.basket-item {
   /* margin: 0 15px; */
   padding-bottom: 10px;
   border-bottom: 1px solid grey;
   /* width: 100%; */
+}
+
+.purchase-section {
+  margin-top: 30px;
 }
 
 .btn-purchase {

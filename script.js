@@ -48,15 +48,31 @@ let addItemToCart = (title, price, imageSrc) => {
     }
 
     let cartRowContent = `
-        <div class="cart-item cart-column">
-            <img class="cart-item-image" src="${imageSrc}" width="100" height="100">
-            <span class="cart-item-title">${title}</span>
+    <div class="">
+    <div class="row row-bottom basket-item valign-wrapper">
+      <div class="col s6">
+        <div class="row row-bottom items valign-wrapper">
+          <img class="col s1 cart-item-image" src="${imageSrc}" />
+          <span class="col s11 cart-item-title">
+            ${title}
+          </span>
         </div>
+      </div>
+      <div class="col s2">
         <span class="cart-price cart-column">${price}</span>
-        <div class="cart-quantity cart-column">
-            <input class="cart-quantity-input" type="number" value="2">
-            <button class="btn btn-danger" type="button">REMOVE</button>
-        </div>`
+      </div>
+      <div class="col s4 row row-bottom valign-wrapper">
+        <input
+          class="col s4 cart-quantity-input"
+          type="number"
+          value="1"
+        />
+        <button class="col offset-s2 s6 btn btn-danger" type="button">
+          REMOVE
+        </button>
+      </div>
+    </div>
+  </div>`
     cartRow.innerHTML = cartRowContent;
     cartItems.append(cartRow);
     cartRow.querySelector('.btn-danger').addEventListener('click', removeCartItem)

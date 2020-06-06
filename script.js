@@ -37,25 +37,26 @@ let addItemToCart = (title, price, imageSrc) => {
   let cartRowContent = `
     <div class="">
     <div class="row row-bottom basket-item valign-wrapper">
-      <div class="col s6">
+      <div class="col s4 m4 l6">
         <div class="row row-bottom items valign-wrapper">
-          <img class="col s1 cart-item-image" src="${imageSrc}" />
-          <span class="col s11 cart-item-title">
+          <img class="col s0 m2 l2 cart-item-image hide-on-small-only" src="${imageSrc}" />
+          <span class="col s12 m10 l10 cart-item-title">
             ${title}
           </span>
         </div>
       </div>
-      <div class="col s2">
+      <div class="col s3 m2 l2">
         <span class="cart-price cart-column">${price}</span>
       </div>
-      <div class="col s4 row row-bottom valign-wrapper">
+      <div class="col s5 m6 l4 row row-bottom valign-wrapper">
         <input
-          class="col s4 cart-quantity-input"
+          class="col s6 m4 l6 cart-quantity-input"
           type="number"
           value="1"
         />
-        <button class="col offset-s2 s6 btn btn-danger" type="button">
-          REMOVE
+        <button class="col offset-s1 s5 offset-m1 m7 offset-l3 l4 btn btn-danger" type="button">
+          <i class="material-icons left">remove_shopping_cart</i>
+          <span class="hide-on-large-only hide-on-small-only" >Remove</span>
         </button>
       </div>
     </div>

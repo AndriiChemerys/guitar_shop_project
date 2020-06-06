@@ -1,136 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="script.js" async></script>
+    <title>Guitar Shop</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-  <script src="script.js" async></script>
-  <title>Guitar Shop</title>
-</head>
+  <body>
+    <nav class="main-nav">
+      <div class="nav-wrapper teal lighten-2">
+        <a href="#" class="brand-logo center">Play It - Guitar Shop By AC</a>
+      </div>
+    </nav>
 
-<body>
-  <nav class="main-nav">
-    <div class="nav-wrapper teal lighten-2">
-      <a href="#" class="brand-logo center">Play It - Guitar Shop By AC</a>
-    </div>
-  </nav>
-
-  <div class="main-wrapper">
-    <div class="row">
-      <section class="guitar-section col s12 m12 l7 xl6">
-        <div class="">
-          <div class="row">
-            <div class="col s12 m4 guitar-section__item">
-              <div class="card">
-                <div class="card-image">
-                  <img class="card-image__pict" src="img/fender-img.jpg" />
-                </div>
-                <div class="card-content">
-                  <span class="card-title">Fender Stratocaster Sunburst</span>
-                  <p class="card-price">2000$</p>
-                </div>
-                <div class="card-action">
-                  <a href="#" class="shop-item-button">Add to cart</a>
-                </div>
-              </div>
-            </div>
-            <div class="col s12 m4 guitar-section__item">
-              <div class="card">
-                <div class="card-image">
-                  <img class="card-image__pict" src="img/prs-color-img.jpg" />
-                </div>
-                <div class="card-content">
-                  <span class="card-title">PRS Wave</span>
-                  <p class="card-price">2500$</p>
-                </div>
-                <div class="card-action">
-                  <a href="#" class="shop-item-button">Add to cart</a>
-                </div>
-              </div>
-            </div>
-            <div class="col s12 m4 guitar-section__item">
-              <div class="card">
-                <div class="card-image">
-                  <img class="card-image__pict" src="img/prs-sunburst-img.jpg" />
-                </div>
-                <div class="card-content">
-                  <span class="card-title">PRS Sunburst</span>
-                  <p class="card-price">1500$</p>
-                </div>
-                <div class="card-action">
-                  <a href="#" class="shop-item-button">Add to cart</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="container content-section col offset-s0 s12 offset-m0 m12 offset-l0 l5 offset-xl1 xl4">
-        <h2 class="section-header">CART</h2>
-
-        <div class="">
-          <div class="row basket">
-            <div class="col s4 m4 l6 basket__wrapper">
-              <div class="basket__head basket__title">Guitar</div>
-            </div>
-            <div class="col s3 m2 l2 basket__wrapper">
-              <div class="basket__head basket__price">Price</div>
-            </div>
-            <div class="col s5 m6 l4 basket__wrapper">
-              <div class="basket__head basket__remove">Quantity</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="cart-items"></div>
-
-        <div class="row purchase-section">
-          <a class="col s7 m4 l5 waves-effect waves-light btn btn-purchase"><i
-              class="material-icons left">shopping_cart</i>PURCHASE</a>
-          <div class="col offset-s1 s4 offset-m4 m4 offset-l3 l4 cart-total">
-            <strong class="cart-total-title">Total:</strong>
-            <span class="cart-total-price">$0</span>
-          </div>
-        </div>
-      </section>
-    </div>
-  </div>
-
-  <!-- Footer Section  -->
-
-  <footer class="page-footer teal lighten-2">
-    <div class="container">
+    <div class="main-wrapper">
       <div class="row">
-        <div class="col l6 s12">
-          <h5 class="white-text">Guitar Shop</h5>
-          <p class="grey-text text-lighten-4">
-            Designed and built with &hearts; by Andrii Chemerys.
-          </p>
-        </div>
-        <div class="col l4 offset-l2 s12">
-          <h5 class="white-text">Links:</h5>
-          <ul>
-            <li>
-              <a class="grey-text text-lighten-3" href="#!">Ig</a>
-            </li>
-            <li><a class="grey-text text-lighten-3" href="#!">Fb</a></li>
-            <li><a class="grey-text text-lighten-3" href="#!">Ln</a></li>
-            <li><a class="grey-text text-lighten-3" href="#!">GitHub</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="footer-copyright">
-      <div class="container">
-        © 2020 All Rights Reserved
-      </div>
-    </div>
-  </footer>
-</body>
+        <section class="guitar-section col s12 m12 l7 xl6">
+          <div class="">
+            <div class="row">
+              <div class="col s12 m4 guitar-section__item">
+                <div class="card">
+                  <div class="card-image">
+                    <img class="card-image__pict" src="img/fender-img.jpg" />
+                  </div>
+                  <div class="card-content">
+                    <span class="card-title">Fender Stratocaster Sunburst</span>
+                    <p class="card-price">2000$</p>
+                  </div>
+                  <div class="card-action">
+                    <a href="#" class="shop-item-button">Add to cart</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col s12 m4 guitar-section__item">
+                <div class="card">
+                  <div class="card-image">
+                    <img class="card-image__pict" src="img/prs-color-img.jpg" />
+                  </div>
+                  <div class="card-content">
+                    <span class="card-title">PRS Wave</span>
+                    <p class="card-price">2500$</p>
+                  </div>
+                  <div class="card-action">
+                    <a href="#" class="shop-item-button">Add to cart</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col s12 m4 guitar-section__item">
+                <div class="card">
+                  <div class="card-image">
+                    <img
+                      class="card-image__pict"
+                      src="img/prs-sunburst-img.jpg"
+                    />
+                  </div>
+                  <div class="card-content">
+                    <span class="card-title">PRS Sunburst</span>
+                    <p class="card-price">1500$</p>
+                  </div>
+                  <div class="card-action">
+                    <a href="#" class="shop-item-button">Add to cart</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
+        <section
+          class="container content-section col offset-s0 s12 offset-m0 m12 offset-l0 l5 offset-xl1 xl4"
+        >
+          <h2 class="section-header">CART</h2>
+
+          <div class="">
+            <div class="row basket">
+              <div class="col s4 m4 l6 basket__wrapper">
+                <div class="basket__head basket__title">Guitar</div>
+              </div>
+              <div class="col s3 m2 l2 basket__wrapper">
+                <div class="basket__head basket__price">Price</div>
+              </div>
+              <div class="col s5 m6 l4 basket__wrapper">
+                <div class="basket__head basket__remove">Quantity</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="cart-items"></div>
+
+          <div class="row purchase-section">
+            <a class="col s7 m4 l5 waves-effect waves-light btn btn-purchase"
+              ><i class="material-icons left">shopping_cart</i>PURCHASE</a
+            >
+            <div class="col offset-s1 s4 offset-m4 m4 offset-l3 l4 cart-total">
+              <strong class="cart-total-title">Total:</strong>
+              <span class="cart-total-price">$0</span>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <!-- Footer Section  -->
+
+    <footer class="page-footer teal lighten-2">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">Guitar Shop</h5>
+            <p class="grey-text text-lighten-4">
+              Designed and built with &hearts; by Andrii Chemerys.
+            </p>
+          </div>
+          <div class="col l4 offset-l2 s12">
+            <h5 class="white-text">Links:</h5>
+            <ul>
+              <li>
+                <a
+                  class="grey-text text-lighten-3"
+                  href="https://github.com/AndriiChemerys"
+                  target="_blank"
+                  >GitHub</a
+                >
+              </li>
+              <li>
+                <a
+                  class="grey-text text-lighten-3"
+                  href="https://www.linkedin.com/in/andrii-chemerys-b95074151/"
+                  target="_blank"
+                  >LinkedIn</a
+                >
+              </li>
+              <li>
+                <a
+                  class="grey-text text-lighten-3"
+                  href="https://www.instagram.com/andrii_chemerys/"
+                  target="_blank"
+                  >Instagram</a
+                >
+              </li>
+              <li>
+                <a
+                  class="grey-text text-lighten-3"
+                  href="https://www.facebook.com/andrii.chemerys/"
+                  target="_blank"
+                  >Facebook</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+          © 2020 All Rights Reserved
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>

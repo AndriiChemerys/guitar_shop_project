@@ -1,31 +1,15 @@
-// if (document.readyState == 'loading') {
-//     document.addEventListener('DOMContentLoaded', ready)
-// } else {
-//     ready();
-// }
-
-// document.addEventListener("DOMContentLoaded", function () {
-
 let removeCartItemButtons = document.querySelectorAll(".btn-danger");
-
 for (i of removeCartItemButtons) {
   let btn = element;
   btn.addEventListener("click", removeCartItem);
 }
-
-// removeCartItemButtons.forEach((element) => {
-//   let btn = element;
-//   btn.addEventListener("click", removeCartItem);
-// });
 
 let quantityInput = document.querySelectorAll(".cart-quantity-input");
 for (i of quantityInput) {
   let input = i;
   input.addEventListener("change", quantityChanged);
 }
-// });
 
-// Cart Clicked func
 let addToCartClicked = (event) => {
   let btn = event.target;
   let shopItem = btn.parentElement.parentElement;
@@ -86,7 +70,6 @@ let addItemToCart = (title, price, imageSrc) => {
     .addEventListener("change", quantityChanged);
 };
 
-// Add To Cart button
 let addToCartBtn = document.querySelectorAll(".shop-item-button");
 console.log(addToCartBtn);
 for (i of addToCartBtn) {
@@ -94,14 +77,24 @@ for (i of addToCartBtn) {
   i.addEventListener("click", addToCartClicked);
 }
 
+document
+  .querySelector(".btn-purchase")
+  .addEventListener("click", purchaseClicked);
+
+function purchaseClicked() {
+  alert("Thank you for your purchase");
+  let cartItems = document.querySelector(".cart-items");
+  while (cartItems.hasChildNodes()) {
+    cartItems.removeChild(cartItems.firstChild);
+  }
+  updateCartTotal();
+}
+
 let removeCartItem = (event) => {
   let btnClicked = event.target;
   btnClicked.parentElement.parentElement.parentElement.parentElement.remove();
   updateCartTotal();
 };
-// let ready = () => {
-
-// }
 
 let quantityChanged = (event) => {
   let input = event.target;
@@ -119,15 +112,11 @@ let updateCartTotal = () => {
   let total = 0;
   for (let i of cartRows) {
     let cartRow = i;
-    // console.log(cartRow);
     let priceEl = cartRow.querySelector(".cart-price");
     let quantityElement = cartRow.querySelector(".cart-quantity-input");
     let price = parseFloat(priceEl.innerText.replace("$", ""));
-    // console.log(price)
     let quantity = quantityElement.value;
-    // console.log(price * quantity)
     total = total + price * quantity;
-    // console.log("total = " + total)
   }
   total = Math.round(total * 100) / 100;
   document.querySelector(".cart-total-price").innerText = "$" + total;

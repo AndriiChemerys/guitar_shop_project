@@ -10,6 +10,15 @@
 
 .main-wrapper {
   padding: 3vh 10vw;
+
+  /* background image with some fit girl */
+  background-image: url(img/pict/woman-in-white-shirt-playing-brown-electric-guitar_.jpg);
+  /* background-size: 150%; */
+  background-size: 100%;
+  background-size: cover;
+  background-position: 0% 0%;
+  /* background-position: center; */
+  background-repeat: no-repeat;
 }
 
 .card-content {
@@ -29,12 +38,14 @@
   margin: 10px 0;
   font-size: 24px;
   font-weight: 500;
+  color: white;
 }
 
 .basket__head,
 .basket-item {
   padding-bottom: 10px;
-  border-bottom: 1px solid grey;
+  border-bottom: 1px solid rgb(214, 214, 214);
+  color: rgb(214, 214, 214);
 }
 
 .purchase-section {

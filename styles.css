@@ -41,6 +41,16 @@
   color: white;
 }
 
+/* .card-content,
+.card-action {
+  opacity: 0.5;
+} */
+
+.guitar-section__item {
+  opacity: 0.9;
+}
+
+
 .basket__head,
 .basket-item {
   padding-bottom: 10px;
@@ -81,6 +91,10 @@
 .cart-total-price {
   color: #333;
   font-size: 1.1em;
+}
+
+.cart-price {
+  color: rgb(97, 97, 97);
 }
 
 /* Fixing white space effect aroud title text on mobile with media queries */

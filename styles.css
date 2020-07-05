@@ -12,7 +12,7 @@
   padding: 3vh 10vw;
 
   /* background image with some fit girl */
-  background-image: url(img/pict/woman-in-white-shirt-playing-brown-electric-guitar_.jpg);
+  background-image: url(img/pict/woman-in-white-shirt-playing-brown-electric-guitar_60.jpg);
   /* background-size: 150%; */
   background-size: 100%;
   background-size: cover;
@@ -38,7 +38,7 @@
   margin: 10px 0;
   font-size: 24px;
   font-weight: 500;
-  color: white;
+  color: #f7f7f7;
 }
 
 /* .card-content,
@@ -50,12 +50,11 @@
   opacity: 0.9;
 }
 
-
 .basket__head,
 .basket-item {
   padding-bottom: 10px;
-  border-bottom: 1px solid rgb(214, 214, 214);
-  color: rgb(214, 214, 214);
+  border-bottom: 1px solid #1a1d1c;
+  color: #1a1d1c;
 }
 
 .purchase-section {
@@ -75,7 +74,7 @@
 }
 
 .btn-danger:hover {
-  background-color: #ca4747;
+  background-color: black;
 }
 
 .cart-total {
@@ -85,16 +84,20 @@
 .cart-total-title {
   font-weight: bold;
   font-size: 1.5em;
-  color: black;
+  color: #1a1d1c;
 }
 
 .cart-total-price {
-  color: #333;
+  color: #1a1d1c;
   font-size: 1.1em;
 }
 
 .cart-price {
-  color: rgb(97, 97, 97);
+  color: #1a1d1c;
+}
+
+.cart-quantity-input {
+  color: #1a1d1c;
 }
 
 /* Fixing white space effect aroud title text on mobile with media queries */
